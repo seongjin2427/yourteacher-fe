@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["vite-plugin-svgr/client"],
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
@@ -23,9 +24,11 @@
     "paths": {
       "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
-      "@styles/*": ["src/styles/*"]
+      "@styles/*": ["src/styles/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@pages/*": ["src/pages/*"]
     }
   },
-  "include": ["src", "postcss.config.js", "tailwind.config.js"],
+  "include": ["src", "postcss.config.js", "tailwind.config.js", "images.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

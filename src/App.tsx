@@ -1,7 +1,14 @@
+import React from 'react';
 import './index.css';
 
-const App = () => {
-  return <div className="bg-red-200">App</div>;
+import Page from '@components/Page';
+
+const App: React.FC = () => {
+  return (
+    <div className="font-pretendard h-screen">
+      <Page />
+    </div>
+  );
 };
 
 export default App;
